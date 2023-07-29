@@ -24,7 +24,7 @@ public class Main {
                    if (add(tictactoe,getIndex(num),'X'))
                    {
                        played=true;
-                       arrayPrint(tictactoe);
+                       printArray(tictactoe);
                        if (checkWin(tictactoe,'X'))
                        {
                            finished=true;
@@ -41,7 +41,7 @@ public class Main {
                 if(add(tictactoe,getIndex(num),'O')) {
                     played=true;
                     System.out.println("\nComputer choose "+num);
-                    arrayPrint(tictactoe);
+                    printArray(tictactoe);
 
                     if(checkWin(tictactoe,'O')){
                         finished=true;
@@ -82,7 +82,6 @@ public class Main {
         boolean added=false;
 
      if(tictactoe[index[0]][index[1]]==' '){
-         System.out.println(tictactoe[index[0]][index[1]]);
          tictactoe[index[0]][index[1]]=XO;
          added=true;
      }
@@ -115,7 +114,7 @@ public class Main {
         return win;
     }
 
-    public static void arrayPrint(char[][] tictactoe){
+    public static void printArray(char[][] tictactoe){
         for (int i = 0; i < tictactoe.length; i++) {
             for (int j = 0; j < tictactoe[i].length; j++) {
                 System.out.print(tictactoe[i][j]);
