@@ -99,7 +99,7 @@ public class Main {
                 break;
             }
             //cheek from the columns
-            else if (((tictactoe[0][i]) & (tictactoe[1][i]) & (tictactoe[2][1]))==XO){
+            else if (((tictactoe[0][i]) & (tictactoe[1][i]) & (tictactoe[2][i]))==XO){
                 win =true;
                 break;
             }
