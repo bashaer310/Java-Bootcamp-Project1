@@ -55,7 +55,7 @@ public class Main {
         }while (finished==false & count !=9);
 
         if(count==9 & finished==false)
-            System.out.println("\nNo one wins ");
+            System.out.println("\nNo one won ");
     }
 
     public static int[] getIndex(int num) {
